@@ -57,6 +57,9 @@ Dönen response un
         Collections.sort(yasList);
         Assert.assertEquals(Integer.valueOf("23"),yasList.get(yasList.size()-1));
 
+        List<String> nameList=json.getList("data.findAll{it.employee_salary>350000}.employee_name");
+        System.out.println(nameList);
+        Assert.assertTrue(nameList.contains("Charde Marshall"));
 
 
 
