@@ -46,10 +46,21 @@ Sondan 2. çalışanın maaşının 106450 olduğunu
         expectedDataMap.put("calisanSayisi",24);
         expectedDataMap.put("istenenMaas",106450);
         return expectedDataMap;
-
-
-
     }
+
+    public HashMap<String,Integer> setUpTestData2(){
+        HashMap<String,Integer>expectedDataMap=new HashMap<String, Integer>();
+
+        expectedDataMap.put("statusCode",200);
+        expectedDataMap.put("enYuksekMaas",725000);
+        expectedDataMap.put("ikinciYuksekMaas",675000);
+        expectedDataMap.put("enKucukYas",19);
+        return expectedDataMap;
+
+         }
+
+
+
 
 
 
