@@ -1,5 +1,8 @@
 package com.techproed.TestData;
 
+import jdk.nashorn.api.scripting.JSObject;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -79,6 +82,26 @@ Sondan 2. çalışanın maaşının 106450 olduğunu
         expectedDataMap.put("status","success");
         expectedDataMap.put("message","Successfully! Record has been added.");
         return expectedDataMap;
+
+
+         }
+
+         public JSONObject setUpDelete01(){
+        /*
+        {
+ "status": "success",
+ "data": "2",
+ "message": "Successfully! Record has been deleted"
+}
+         */
+
+             JSONObject expectedData=new JSONObject();
+             expectedData.put("status","success");
+             expectedData.put("data","2");
+             expectedData.put("message","Successfully! Record has been deleted");
+             expectedData.put("statusCode",200);
+             return expectedData;
+
 
 
          }
