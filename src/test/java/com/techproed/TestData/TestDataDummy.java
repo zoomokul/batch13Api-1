@@ -102,8 +102,6 @@ Sondan 2. çalışanın maaşının 106450 olduğunu
              expectedData.put("statusCode",200);
              return expectedData;
 
-
-
          }
 
 
