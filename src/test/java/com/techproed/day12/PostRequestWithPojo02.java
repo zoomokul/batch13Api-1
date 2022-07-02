@@ -46,7 +46,7 @@ public class PostRequestWithPojo02 extends TestBaseHerokuApp {
 
        //url oluştur
 
-       spec02. pathParam("parametre1","booking");
+       spec02. pathParam("parametre1","pet");
 
        //requestBody oluştur.
 

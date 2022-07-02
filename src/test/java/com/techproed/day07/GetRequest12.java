@@ -65,6 +65,7 @@ public class GetRequest12 extends TestBaseHerokuApp {
         Assert.assertEquals(expectedDataMap.get("lastname"),actualDataMap.get("lastname"));
         Assert.assertEquals(expectedDataMap.get("totalprice"),actualDataMap.get("totalprice"));
         Assert.assertEquals(expectedDataMap.get("depositpaid"),actualDataMap.get("depositpaid"));
+
         Assert.assertEquals(((Map)expectedDataMap.get("bookingdates")).get("checkin"),
                 ((Map) actualDataMap.get("bookingdates")).get("checkin"));
         Assert.assertEquals(   ((Map<?, ?>) expectedDataMap.get("bookingdates")).get("checkout"),
